@@ -17,67 +17,59 @@ font-family:'Poppins',sans-serif;
 
 body{
 background:#050505;
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-overflow:hidden;
 color:white;
+overflow-x:hidden;
+padding:30px 15px;
 }
 
 .bg{
-position:absolute;
+position:fixed;
+top:0;
+left:0;
 width:100%;
 height:100%;
+z-index:-1;
 background:
 radial-gradient(circle at top,#39ff1440,transparent 35%),
 radial-gradient(circle at bottom,#ffd70030,transparent 35%);
 }
 
 .container{
-position:relative;
-z-index:2;
+max-width:1000px;
+margin:auto;
 text-align:center;
-max-width:900px;
-padding:30px;
 }
 
 .trophy{
 font-size:70px;
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
 .title{
 font-size:70px;
 font-weight:800;
 color:#39FF14;
-text-shadow:
-0 0 10px #39FF14,
-0 0 20px #39FF14,
-0 0 40px #39FF14;
+text-shadow:0 0 15px #39FF14,0 0 35px #39FF14;
 }
 
 .subtitle{
 font-size:42px;
 font-weight:700;
 color:#FFD700;
-margin-bottom:20px;
-text-shadow:
-0 0 10px #FFD700,
-0 0 20px #FFD700;
+margin-bottom:15px;
+text-shadow:0 0 10px #FFD700;
 }
 
 .tagline{
 font-size:24px;
 font-weight:600;
 margin:20px 0;
-color:#fff;
 }
 
 .card{
-margin-top:30px;
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,255,255,0.1);
+margin-top:25px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
 backdrop-filter:blur(15px);
 padding:30px;
 border-radius:25px;
@@ -91,54 +83,70 @@ margin-bottom:15px;
 }
 
 .text{
-line-height:1.9;
-font-size:18px;
+line-height:1.8;
 color:#ddd;
 }
 
 .features{
-margin-top:20px;
+margin-top:25px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:15px;
 }
 
 .feature{
-background:#111;
-padding:15px;
-border-radius:12px;
-border:1px solid #222;
+background:rgba(255,255,255,.05);
+padding:18px;
+border-radius:15px;
+border:1px solid rgba(255,255,255,.08);
+transition:.3s;
+}
+
+.feature:hover{
+transform:translateY(-5px);
+border-color:#39FF14;
+box-shadow:0 0 20px rgba(57,255,20,.4);
+}
+
+.whatsapp-buttons{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+margin-top:30px;
+}
+
+.whatsapp-btn{
+background:linear-gradient(135deg,#25D366,#128C7E);
+color:white;
+text-decoration:none;
+padding:14px 22px;
+border-radius:50px;
+font-weight:700;
+box-shadow:0 0 20px rgba(37,211,102,.4);
 }
 
 .domain{
-margin-top:35px;
+margin-top:30px;
 font-size:22px;
 font-weight:700;
 color:#FFD700;
 }
 
 .footer{
-margin-top:15px;
+margin-top:25px;
 color:#999;
+line-height:1.8;
 }
 
 @media(max-width:768px){
-
-.title{
-font-size:42px;
-}
-
-.subtitle{
-font-size:26px;
-}
-
-.tagline{
-font-size:18px;
-}
-
+.title{font-size:42px;}
+.subtitle{font-size:26px;}
+.tagline{font-size:18px;}
 }
 </style>
 </head>
+
 <body>
 
 <div class="bg"></div>
@@ -151,7 +159,7 @@ font-size:18px;
 <h2 class="subtitle">LEGACY CUP</h2>
 
 <p class="tagline">
-16 Teams. 1 Trophy. Endless Glory.
+🔥 16 Teams. 1 Trophy. Endless Glory.
 </p>
 
 <div class="card">
@@ -162,11 +170,13 @@ font-size:18px;
 
 <p class="text">
 Get ready for an unforgettable cricketing experience.
+
+Live Scores, Match Fixtures, Team Profiles, Results, Awards and Tournament Statistics are coming soon.
+
 The Legacy Begins Here.
 </p>
 
 <div class="features">
-
 <div class="feature">🏏 Live Scores</div>
 <div class="feature">📅 Match Fixtures</div>
 <div class="feature">📊 Points Table</div>
@@ -175,6 +185,25 @@ The Legacy Begins Here.
 <div class="feature">📸 Tournament Gallery</div>
 <div class="feature">🥇 Awards & Statistics</div>
 <div class="feature">🔔 Tournament Updates</div>
+<div class="feature">⚡ Live Match Center</div>
+<div class="feature">🏆 Tournament Bracket</div>
+<div class="feature">📈 Player Statistics</div>
+<div class="feature">🎥 Match Highlights</div>
+</div>
+
+<div class="whatsapp-buttons">
+
+<a class="whatsapp-btn"
+href="https://wa.me/917033689210"
+target="_blank">
+💬 Join WhatsApp
+</a>
+
+<a class="whatsapp-btn"
+href="https://wa.me/918102508514"
+target="_blank">
+📢 Tournament Updates
+</a>
 
 </div>
 
@@ -183,6 +212,8 @@ phulkaricup.online
 </div>
 
 <div class="footer">
+🏏 Phulkari Legacy Cup 2026<br>
+Fulkari Sports Arena<br>
 Stay Tuned • Something Big Is Coming
 </div>
 
